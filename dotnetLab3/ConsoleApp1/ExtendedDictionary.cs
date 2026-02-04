@@ -14,22 +14,27 @@ public class ExtendedDictionary<T, U, V> : IEnumerable<ExtendedDictionaryElement
 
     public bool Remove(T key)
     {
-        return items.RemoveAll(e => e.Key.Equals(key)) > 0;
+        return items.RemoveAll(e =>
+            EqualityComparer<T>.Default.Equals(e.Key, key)) > 0;
     }
 
     public bool ContainsKey(T key)
     {
-        return items.Exists(e => e.Key.Equals(key));
+        return items.Exists(e =>
+            EqualityComparer<T>.Default.Equals(e.Key, key));
     }
 
     public bool ContainsValue(U value1, V value2)
     {
-        return items.Exists(e => e.Value1.Equals(value1) && e.Value2.Equals(value2));
+        return items.Exists(e =>
+            EqualityComparer<U>.Default.Equals(e.Value1, value1) &&
+            EqualityComparer<V>.Default.Equals(e.Value2, value2));
     }
 
     public ExtendedDictionaryElement<T, U, V> this[T key]
     {
-        get => items.Find(e => e.Key.Equals(key));
+        get => items.Find(e =>
+            EqualityComparer<T>.Default.Equals(e.Key, key));
     }
 
     public int Count => items.Count;
