@@ -10,7 +10,6 @@ class Program
         DemoArrayExtensions();
         DemoExtendedDictionary();
     }
-
     static void DemoStringExtensions()
     {
         Console.WriteLine("Методи розширення для String");
@@ -20,7 +19,6 @@ class Program
         Console.WriteLine($"Реверс: {text.ReverseString()}");
         Console.WriteLine($"Кількість l: {text.CountChar('l')}");
     }
-
     static void DemoArrayExtensions()
     {
         Console.WriteLine("\nМетоди розширення для масивів");
