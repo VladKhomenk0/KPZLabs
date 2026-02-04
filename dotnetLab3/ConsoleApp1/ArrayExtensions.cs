@@ -20,7 +20,7 @@ public static class ArrayExtensions
     {
         if (array == null) return Array.Empty<T>();
 
-        List<T> unique = new List<T>();
+        HashSet<T> unique = new List<T>();
 
         foreach (var item in array)
         {
