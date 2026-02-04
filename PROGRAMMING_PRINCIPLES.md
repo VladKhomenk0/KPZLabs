@@ -5,13 +5,13 @@
 Кожен клас у проєкті має одну чітку відповідальність.
 
 - `StringExtensions` містить лише методи розширення для типу `string`
-  - https://git.ztu.edu.ua/labskhomenko/dotnetlabs/-/blob/main/dotnetLab3/StringExtensions.cs
+  - https://git.ztu.edu.ua/labskhomenko/dotnetlabs/-/blob/master/dotnetLab3/ConsoleApp1/StringExtensions.cs
 - `ArrayExtensions` відповідає лише за методи розширення для масивів
-  - https://git.ztu.edu.ua/labskhomenko/dotnetlabs/-/blob/main/dotnetLab3/ArrayExtensions.cs
+  - https://git.ztu.edu.ua/labskhomenko/dotnetlabs/-/blob/master/dotnetLab3/ConsoleApp1/ArrayExtensions.cs
 - `ExtendedDictionary` інкапсулює логіку роботи з узагальненим словником
-  - https://git.ztu.edu.ua/labskhomenko/dotnetlabs/-/blob/main/dotnetLab3/ExtendedDictionary.cs
+  - https://git.ztu.edu.ua/labskhomenko/dotnetlabs/-/blob/master/dotnetLab3/ConsoleApp1/ExtendedDictionary.cs
 - `Program` використовується лише як точка входу в програму
-  - https://git.ztu.edu.ua/labskhomenko/dotnetlabs/-/blob/main/dotnetLab3/Program.cs
+  - https://git.ztu.edu.ua/labskhomenko/dotnetlabs/-/blob/master/dotnetLab3/ConsoleApp1/Program.cs
 
 ---
 
@@ -22,7 +22,7 @@
 - робота зі словником централізована в одному класі `ExtendedDictionary`
 
 Приклад:
-- https://git.ztu.edu.ua/labskhomenko/dotnetlabs/-/blob/main/dotnetLab3/ArrayExtensions.cs#L5-L18
+- https://git.ztu.edu.ua/labskhomenko/dotnetlabs/-/blob/master/dotnetLab3/ConsoleApp1/ArrayExtensions.cs#L5-L18
 
 ---
 
@@ -34,7 +34,7 @@
 
 Приклад:
 - метод `ReverseString`
-  - https://git.ztu.edu.ua/labskhomenko/dotnetlabs/-/blob/main/dotnetLab3/StringExtensions.cs#L5-L12
+  - https://git.ztu.edu.ua/labskhomenko/dotnetlabs/-/blob/master/dotnetLab3/ConsoleApp1/StringExtensions.cs#L5-L12
 
 ---
 
@@ -45,7 +45,7 @@
 - `ExtendedDictionaryElement` чітко описує елемент словника
 
 Приклад:
-- https://git.ztu.edu.ua/labskhomenko/dotnetlabs/-/blob/main/dotnetLab3/ExtendedDictionaryElement.cs
+- https://git.ztu.edu.ua/labskhomenko/dotnetlabs/-/blob/master/dotnetLab3/ConsoleApp1/ExtendedDictionaryElement.cs
 
 ---
 
@@ -56,4 +56,4 @@
 - доступ до даних здійснюється через методи та індексатор
 
 Приклад:
-- https://git.ztu.edu.ua/labskhomenko/dotnetlabs/-/blob/main/dotnetLab3/ExtendedDictionary.cs#L6-L8
+- https://git.ztu.edu.ua/labskhomenko/dotnetlabs/-/blob/master/dotnetLab3/ConsoleApp1/ExtendedDictionary.cs#L6-L8
